@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astraux | More Work</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gumdrop&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-blue: #60b4fc;
+            --accent-blue: #3d8fd1;
+            --light-bg: #DCEBFF;
+            --text-dark: #333;
+            --text-light: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #FFFFFF;
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navbar */
+        nav {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30%;
+            min-width: 280px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 40px;
+            padding: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transition: transform 0.3s ease, background 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav.scrolled {
+            transform: translateX(-50%) scale(0.97);
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-logo img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+
+        .nav-logo span {
+            font-family: 'Gumdrop', sans-serif;
+            font-size: 22px;
+            color: var(--main-blue);
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            padding: 8px 20px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            background: var(--main-blue);
+            color: var(--text-light);
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 100px 40px 80px;
+            text-align: center;
+        }
+
+        .gallery {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gallery-item {
+            background: var(--light-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            aspect-ratio: 16/9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 583px;
+            height: 329px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 8px;
+            border: none;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: var(--light-bg);
+            color: var(--text-dark);
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-logo">
+            <img src="https://cdn.discordapp.com/attachments/837376762245021736/1344007486256054312/Astraux_Logo.png?ex=67bf5803&is=67be0683&hm=8d309615967f1913858e556e8fe78e829dd876bd2bdacbb74d24bdd834c345c0&" alt="Astraux Logo">
+            <span>Astraux</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="more-work.html" class="active">More Work</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#terms">Terms</a>
+        </div>
+    </nav>
+    <!-- Work Section -->
+    <section id="work">
+        <div class="container">
+            <h2>More of My Work</h2>
+            <div class="gallery">
+                <div class="gallery-item"><img src="https://cdn.discordapp.com/attachments/1335245407537594478/1342480202181115994/Shop_Basket_Mongus.png?ex=67bf0f9e&is=67bdbe1e&hm=e476d6fe26ab8c0122a9d710bd503d62766ca6ca0942db9a2ff513f89f0a4c5c&" alt="Work 1"></div>
+                <div class="gallery-item"><img src="https://cdn.discordapp.com/attachments/1335245407537594478/1342480167334838344/Winter_Boots_Mongus.png?ex=67bf0f95&is=67bdbe15&hm=46557bd374f1e7b26ef1f7f3599242e9f524ac46530fa3b686b17b1fd629c942&" alt="Work 2"></div>
+                <div class="gallery-item"><img src="https://cdn.discordapp.com/attachments/1335245407537594478/1342480140785029120/Giftbox_Mongus.png?ex=67bf0f8f&is=67bdbe0f&hm=a7649ab4e57a87d9a33ed5eb0894241bb07d17edfe392afbbe4a9a7739a55755&" alt="Work 3"></div>
+                <div class="gallery-item"><img src="https://cdn.discordapp.com/attachments/1335245407537594478/1342480122111852635/Gemstone_Mongus.png?ex=67bf0f8b&is=67bdbe0b&hm=c11e030f95e4643e8d0474754d621a9b61bac677c320c10c36601ae059e4932a&" alt="Work 4"></div>
+                <div class="gallery-item"><img src="https://cdn.discordapp.com/attachments/1335245407537594478/1342480102788960278/Crown_Mongus.png?ex=67bf0f86&is=67bdbe06&hm=ffdcb1f842c47d48ac39744824de86d3d4009eee887beb67a1e2dd30391da7e0&" alt="Work 5"></div>
+                <div class="gallery-item"><img src="https://cdn.discordapp.com/attachments/1335245407537594478/1342480122111852635/Gemstone_Mongus.png" alt="Work 6"></div>
+                <div class="gallery-item"><img src="https://cdn.discordapp.com/attachments/1335245407537594478/1342480140785029120/Giftbox_Mongus.png" alt="Work 7"></div>
+                <div class="gallery-item"><img src="https://cdn.discordapp.com/attachments/1335245407537594478/1342480167334838344/Winter_Boots_Mongus.png" alt="Work 8"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Astraux | Crafted with vector magic</p>
+    </footer>
+</body>
+</html>
